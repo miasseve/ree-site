@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>REe — RE’sale ecom.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="wordmark">RE<span class="e">e</span><span class="dotend"></span></span>
+      </a>
+
+      <nav class="menu">
+        <a href="solutions.html">Løsninger</a>
+        <a href="how.html">Sådan virker det</a>
+        <a href="pricing.html">Priser</a>
+        <a href="cases.html">Cases / Butikker</a>
+        <a class="cta" href="demo.html">Book en demo</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="grid">
+        <div class="card">
+          <div class="cardPad">
+            <h1>Sælg secondhand på alle dine kanaler — instant.</h1>
+            <p class="lead">
+              REe digitaliserer hvert item fra ét billede og gør det klar til salg i butik og online:
+              produktkort, kategorier, barcode-tag, synk til kanaler samt consignor/admin — alt styres fra REe.
+            </p>
+
+            <div class="btnRow">
+              <a class="btn btnPrimary" href="demo.html">Book en demo</a>
+              <a class="btn" href="how.html">Se workflowet</a>
+            </div>
+
+            <div class="pills">
+              <span class="pill">RE’sale</span>
+              <span class="pill">ecom.</span>
+              <span class="pill">iPhone / iPad / PC</span>
+              <span class="pill">Barcode + synk</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardPad">
+            <h2 style="margin:0 0 10px">Det REe erstatter</h2>
+            <p class="lead" style="margin:0">
+              Manuelle produktfelter, dobbelt-oprettelser, Excel, fejl i consignor-afregning og rod i lagerstatus.
+            </p>
+            <div class="pills" style="margin-top:14px">
+              <span class="pill">1 foto → færdigt produktkort</span>
+              <span class="pill">Barcode i fysisk butik</span>
+              <span class="pill">Synk til webshop/kanaler</span>
+              <span class="pill">Consignor + admin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="mini">Kort fortalt</p>
+      <div class="cards">
+        <div class="tile">
+          <h3>1) Opret varen</h3>
+          <p>Tag et billede. REe udfylder titel, kategori, attributter og tekst.</p>
+        </div>
+        <div class="tile">
+          <h3>2) Barcode til butikken</h3>
+          <p>Print label. Scan ved kassen for hurtig lookup og statusopdatering.</p>
+        </div>
+        <div class="tile">
+          <h3>3) Synk til kanaler</h3>
+          <p>Publicér fra REe til din webshop og øvrige kanaler (én kilde til sandhed).</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="small">© REe — RE’sale ecom. · <a href="demo.html" style="text-decoration:underline">Book en demo</a></div>
+    </div>
+  </footer>
+
+  <script>
+    const file = location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".menu a").forEach(a=>{
+      if(a.getAttribute("href") === file) a.classList.add("active");
+    });
+  </script>
+
+</body>
+</html>
